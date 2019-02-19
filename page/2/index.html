@@ -13,7 +13,7 @@
     <meta name="description" content="技术博客">
 <meta property="og:type" content="website">
 <meta property="og:title" content="zhaoxiaolin">
-<meta property="og:url" content="http://chenshiyi.github.io/page/2/index.html">
+<meta property="og:url" content="http://xiaolin18.github.io/page/2/index.html">
 <meta property="og:site_name" content="zhaoxiaolin">
 <meta property="og:description" content="技术博客">
 <meta property="og:locale" content="zh-CN">
@@ -153,17 +153,17 @@
         <article class="article article-summary">
     <div class="article-summary-inner">
         
-        <a href="/2019/02/18/responsive/responsive-img/" class="thumbnail">
+        <a href="/2019/02/18/jsBase/scope/" class="thumbnail">
     
     
-        <span style="background-image:url(../../../../../images/img-responsive.jpeg)" alt="图片适配PC、移动端" class="thumbnail-image"></span>
+        <span class="thumbnail-image thumbnail-none"></span>
     
     
         
 <span class="comment-counter">
     <i class="fa fa-comments-o"></i>
     
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://chenshiyi.github.io/2019/02/18/responsive/responsive-img/">0</span>
+        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://xiaolin18.github.io/2019/02/18/jsBase/scope/">0</span>
     
 </span>
 
@@ -176,33 +176,22 @@
             <div class="category">
             
             </div>
-            <div class="date"><time datetime="2019-02-18T07:38:03.538Z" itemprop="datePublished">2019-02-18</time></div>
+            <div class="date"><time datetime="2019-02-18T07:38:03.000Z" itemprop="datePublished">2019-02-18</time></div>
         </div>
         
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2019/02/18/responsive/responsive-img/">图片适配PC、移动端</a>
+        <a href="/2019/02/18/jsBase/scope/">作用域</a>
         </h1>
     
 
         <p class="article-excerpt">
-            
-相关链接移动端适配方案
-问题
-什么是自适应？
+            概念
+JS是脚本语言，只有runtime, 没有buildTime。是由各个浏览器引擎编译运行起来的
 
-PC、移动端适配方案？
-
-图片放大、缩放会导致变形模糊
-
-图片加载缓慢，如何改善
-
-
-百分比布局
-因为pc端长&gt;高，移动端长&lt;高，所以可以有两张图片。根据视口的宽高比例来决定操作展示那一张图片
-12长/高 &gt; 1 ==&gt; 显示长 &gt; 高的图片长/高 &lt;= 1 ==&gt; 显示长 &lt; 高的图片
-
-img标签
+分类
+静态作用域（词法作用域）: js中的变量都有静态作用域，在编译阶段确定作用域，不会被函数的位置所改变。变量的作用域是变量可以被访问的区域。
+1234567891011var value = 1;function foo() &#123;    console.log(value);&#12
         </p>
     </div>
 </article>
@@ -215,17 +204,17 @@ img标签
         <article class="article article-summary">
     <div class="article-summary-inner">
         
-        <a href="/2019/02/18/scss/scss-base/" class="thumbnail">
+        <a href="/2019/02/18/scss/scss-advanced/" class="thumbnail">
     
     
-        <span style="background-image:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1550489282456&di=e4f2ee7260c8a746a316590001179d7a&imgtype=0&src=http%3A%2F%2Fe.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2Fbf096b63f6246b60905f18b3e6f81a4c500fa2a0.jpg)" alt="SCSS基础" class="thumbnail-image"></span>
+        <span class="thumbnail-image thumbnail-none"></span>
     
     
         
 <span class="comment-counter">
     <i class="fa fa-comments-o"></i>
     
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://chenshiyi.github.io/2019/02/18/scss/scss-base/">0</span>
+        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://xiaolin18.github.io/2019/02/18/scss/scss-advanced/">0</span>
     
 </span>
 
@@ -238,31 +227,19 @@ img标签
             <div class="category">
             
             </div>
-            <div class="date"><time datetime="2019-02-18T07:38:03.538Z" itemprop="datePublished">2019-02-18</time></div>
+            <div class="date"><time datetime="2019-02-18T07:38:03.000Z" itemprop="datePublished">2019-02-18</time></div>
         </div>
         
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2019/02/18/scss/scss-base/">SCSS基础</a>
+        <a href="/2019/02/18/scss/scss-advanced/">SCSS进阶</a>
         </h1>
     
 
         <p class="article-excerpt">
-            变量
-揭秘: https://www.w3cplus.com/preprocessor/sass-basic-variable.html
-1$width: 200px !default;
-
-包含以下三部分:
-
-变量声名符：$
-变量名称
-变量的值
-!default表示默认值
-
-
-普通变量与默认变量
-普通变量：定义之后可以在全局范围内使用
-默认变量：用来设置默认值，在组件化开发中非常有用。在后面添加!
+            SCSS控制命令
+@if: 根据条件来处理样式块，如果条件为true返回一个样式块，反之false返回另一个样式块。配合@else if 和 @else 一起使用
+12345678910111213141516// 假设要控制一个元素的隐藏和显示，就可以定义一个混合宏，通过@if...@else...来判断传进参数的值来控制。@mixin blockOrHidden($boolean:true) 
         </p>
     </div>
 </article>
@@ -279,17 +256,17 @@ img标签
         <article class="article article-summary">
     <div class="article-summary-inner">
         
-        <a href="/2019/02/18/hello-world/" class="thumbnail">
+        <a href="/2019/02/18/scss/scss-brief/" class="thumbnail">
     
     
-        <span style="background-image:url(../../../.././images/cat.jpeg)" alt="Hello World" class="thumbnail-image"></span>
+        <span class="thumbnail-image thumbnail-none"></span>
     
     
         
 <span class="comment-counter">
     <i class="fa fa-comments-o"></i>
     
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://chenshiyi.github.io/2019/02/18/hello-world/">0</span>
+        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://xiaolin18.github.io/2019/02/18/scss/scss-brief/">0</span>
     
 </span>
 
@@ -302,18 +279,28 @@ img标签
             <div class="category">
             
             </div>
-            <div class="date"><time datetime="2019-02-18T07:38:03.537Z" itemprop="datePublished">2019-02-18</time></div>
+            <div class="date"><time datetime="2019-02-18T07:38:03.000Z" itemprop="datePublished">2019-02-18</time></div>
         </div>
         
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2019/02/18/hello-world/">Hello World</a>
+        <a href="/2019/02/18/scss/scss-brief/">SCSS简介</a>
         </h1>
     
 
         <p class="article-excerpt">
-            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick
+            SCSS的安装方式
+gem: 安装所有的ruby应用；
+npm: 安装所有的node应用；
+brew: 安装所有的mac应用；
+
+scss是ruby写的应用，所以安装方式要选择gem
+
+gem install sass
+sass -v检查是否安装
+sass包下载到本地安装：gem install sass包路径xx
+
+项目引入scss只是一个预处理工具，最终项目里面要引用的实际上是：编译好的.cs
         </p>
     </div>
 </article>
@@ -326,7 +313,7 @@ Quick
         <article class="article article-summary">
     <div class="article-summary-inner">
         
-        <a href="/2019/02/18/jsBase/scope/" class="thumbnail">
+        <a href="/2019/02/18/vue-cli3.0/init/" class="thumbnail">
     
     
         <span class="thumbnail-image thumbnail-none"></span>
@@ -336,7 +323,7 @@ Quick
 <span class="comment-counter">
     <i class="fa fa-comments-o"></i>
     
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://chenshiyi.github.io/2019/02/18/jsBase/scope/">0</span>
+        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://xiaolin18.github.io/2019/02/18/vue-cli3.0/init/">0</span>
     
 </span>
 
@@ -349,22 +336,17 @@ Quick
             <div class="category">
             
             </div>
-            <div class="date"><time datetime="2019-02-18T07:38:03.537Z" itemprop="datePublished">2019-02-18</time></div>
+            <div class="date"><time datetime="2019-02-18T07:38:03.000Z" itemprop="datePublished">2019-02-18</time></div>
         </div>
         
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2019/02/18/jsBase/scope/">作用域</a>
+        <a href="/2019/02/18/vue-cli3.0/init/">初始化项目</a>
         </h1>
     
 
         <p class="article-excerpt">
-            概念
-JS是脚本语言，只有runtime, 没有buildTime。是由各个浏览器引擎编译运行起来的
-
-分类
-静态作用域（词法作用域）: js中的变量都有静态作用域，在编译阶段确定作用域，不会被函数的位置所改变。变量的作用域是变量可以被访问的区域。
-1234567891011var value = 1;function foo() &#123;    console.log(value);&#12
+            command12345npm install -g @vue/vlivue --versionvue create XXX
         </p>
     </div>
 </article>
@@ -421,17 +403,17 @@ JS是脚本语言，只有runtime, 没有buildTime。是由各个浏览器引擎
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/web前端/">web前端</a></p>
                             <p class="item-title"><a href="/2019/02/18/static-file/" class="title">静态资源发布</a></p>
-                            <p class="item-date"><time datetime="2019-02-18T07:38:03.539Z" itemprop="datePublished">2019-02-18</time></p>
+                            <p class="item-date"><time datetime="2019-02-18T09:25:08.000Z" itemprop="datePublished">2019-02-18</time></p>
                         </div>
                     </li>
                 
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2019/02/18/vuex/" class="thumbnail">
+                            <a href="/2019/02/18/scss/scss-base/" class="thumbnail">
     
     
-        <span style="background-image:url(../../../.././images/flow.png)" alt="我眼中的Vuex" class="thumbnail-image"></span>
+        <span style="background-image:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1550489282456&di=e4f2ee7260c8a746a316590001179d7a&imgtype=0&src=http%3A%2F%2Fe.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2Fbf096b63f6246b60905f18b3e6f81a4c500fa2a0.jpg)" alt="SCSS基础" class="thumbnail-image"></span>
     
     
 </a>
@@ -440,48 +422,8 @@ JS是脚本语言，只有runtime, 没有buildTime。是由各个浏览器引擎
                         
                         <div class="item-inner">
                             <p class="item-category"></p>
-                            <p class="item-title"><a href="/2019/02/18/vuex/" class="title">我眼中的Vuex</a></p>
-                            <p class="item-date"><time datetime="2019-02-18T07:38:03.539Z" itemprop="datePublished">2019-02-18</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2019/02/18/vue-cli3.0/init/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2019/02/18/vue-cli3.0/init/" class="title">初始化项目</a></p>
-                            <p class="item-date"><time datetime="2019-02-18T07:38:03.539Z" itemprop="datePublished">2019-02-18</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2019/02/18/scss/scss-brief/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2019/02/18/scss/scss-brief/" class="title">SCSS简介</a></p>
-                            <p class="item-date"><time datetime="2019-02-18T07:38:03.539Z" itemprop="datePublished">2019-02-18</time></p>
+                            <p class="item-title"><a href="/2019/02/18/scss/scss-base/" class="title">SCSS基础</a></p>
+                            <p class="item-date"><time datetime="2019-02-18T08:51:33.000Z" itemprop="datePublished">2019-02-18</time></p>
                         </div>
                     </li>
                 
@@ -501,7 +443,47 @@ JS是脚本语言，只有runtime, 没有buildTime。是由各个浏览器引擎
                         <div class="item-inner">
                             <p class="item-category"></p>
                             <p class="item-title"><a href="/2019/02/18/responsive/responsive-base/" class="title">PC、移动端适配基本概念</a></p>
-                            <p class="item-date"><time datetime="2019-02-18T07:38:03.538Z" itemprop="datePublished">2019-02-18</time></p>
+                            <p class="item-date"><time datetime="2019-02-18T08:45:45.000Z" itemprop="datePublished">2019-02-18</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/02/18/responsive/responsive-img/" class="thumbnail">
+    
+    
+        <span style="background-image:url(../../../../../images/img-responsive.jpeg)" alt="图片适配PC、移动端" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2019/02/18/responsive/responsive-img/" class="title">图片适配PC、移动端</a></p>
+                            <p class="item-date"><time datetime="2019-02-18T08:43:08.000Z" itemprop="datePublished">2019-02-18</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/02/18/hello-world/" class="thumbnail">
+    
+    
+        <span style="background-image:url(../../../.././images/cat.jpeg)" alt="Hello World" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2019/02/18/hello-world/" class="title">Hello World</a></p>
+                            <p class="item-date"><time datetime="2019-02-18T08:42:17.000Z" itemprop="datePublished">2019-02-18</time></p>
                         </div>
                     </li>
                 
