@@ -81,4 +81,4 @@ theme: hueman
 deploy:
   type: git
   repo: git@github.com:xiaolin18/xiaolin18.github.io.git
-  branch: master
+  branch: gh-pages
