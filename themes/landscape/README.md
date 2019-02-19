@@ -106,7 +106,7 @@ All of them are enabled by default. You can edit them in `widget` setting.
 - **clean** - Clean temporarily files and downloaded files.
 
 [Hexo]: https://hexo.io/
-[Fancybox]: http://fancyapps.com/fancybox/
+<!-- [Fancybox]: http://fancyapps.com/fancybox/ -->
 [Font Awesome]: http://fontawesome.io/
 [Grunt]: http://gruntjs.com/
 [hexo-generate-feed]: https://github.com/hexojs/hexo-generator-feed

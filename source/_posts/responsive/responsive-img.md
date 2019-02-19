@@ -1,5 +1,5 @@
 title: 图片适配PC、移动端
-thumbnail: "../../../../../images/img-responsive.jpeg
+thumbnail: "../../../../../images/img-responsive.jpeg"
 ---
 <img src="../../../../../images/img-responsive.jpeg" style="width: 720px;height: 400px" alt="响应式图片">
 
