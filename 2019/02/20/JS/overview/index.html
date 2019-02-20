@@ -6,23 +6,26 @@
     
 
     
-    <title>作用域 | 辰十一</title>
+    <title>JavaScript简介 | 辰十一</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-        <meta name="keywords" content="" />
+        <meta name="keywords" content="JavaScript" />
     
-    <meta name="description" content="概念 JS是脚本语言，只有runtime, 没有buildTime。是由各个浏览器引擎编译运行起来的  分类 静态作用域（词法作用域）: js中的变量都有静态作用域，在编译阶段确定作用域，不会被函数的位置所改变。变量的作用域是变量可以被访问的区域。 1234567891011var value = 1;function foo() &amp;#123;    console.log(value);&amp;#12">
+    <meta name="description" content="什么是JavaScript? JavaScript是一种轻量级的脚本语言。所谓脚本语言（script language）指的是不像C或者汇编语言一样具备开发操作系统的能力，只用来编写控制其他大型应用程序（比如：浏览器）的脚本。 JavaScript是一种嵌入式（embeded）语言。只适合嵌入大型应用程序环境，调用宿主环境提供的API。 本身提供的核心语法很少，只能用来做一些数学以及逻辑运算; 本">
+<meta name="keywords" content="JavaScript">
 <meta property="og:type" content="article">
-<meta property="og:title" content="作用域">
-<meta property="og:url" content="http://xiaolin18.github.io/2019/02/18/jsBase/scope/index.html">
+<meta property="og:title" content="JavaScript简介">
+<meta property="og:url" content="http://xiaolin18.github.io/2019/02/20/JS/overview/index.html">
 <meta property="og:site_name" content="辰十一">
-<meta property="og:description" content="概念 JS是脚本语言，只有runtime, 没有buildTime。是由各个浏览器引擎编译运行起来的  分类 静态作用域（词法作用域）: js中的变量都有静态作用域，在编译阶段确定作用域，不会被函数的位置所改变。变量的作用域是变量可以被访问的区域。 1234567891011var value = 1;function foo() &amp;#123;    console.log(value);&amp;#12">
+<meta property="og:description" content="什么是JavaScript? JavaScript是一种轻量级的脚本语言。所谓脚本语言（script language）指的是不像C或者汇编语言一样具备开发操作系统的能力，只用来编写控制其他大型应用程序（比如：浏览器）的脚本。 JavaScript是一种嵌入式（embeded）语言。只适合嵌入大型应用程序环境，调用宿主环境提供的API。 本身提供的核心语法很少，只能用来做一些数学以及逻辑运算; 本">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-02-18T07:38:03.000Z">
+<meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1550489282456&di=e4f2ee7260c8a746a316590001179d7a&imgtype=0&src=http%3A%2F%2Fe.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2Fbf096b63f6246b60905f18b3e6f81a4c500fa2a0.jpg">
+<meta property="og:updated_time" content="2019-02-20T07:05:43.432Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="作用域">
-<meta name="twitter:description" content="概念 JS是脚本语言，只有runtime, 没有buildTime。是由各个浏览器引擎编译运行起来的  分类 静态作用域（词法作用域）: js中的变量都有静态作用域，在编译阶段确定作用域，不会被函数的位置所改变。变量的作用域是变量可以被访问的区域。 1234567891011var value = 1;function foo() &amp;#123;    console.log(value);&amp;#12">
+<meta name="twitter:title" content="JavaScript简介">
+<meta name="twitter:description" content="什么是JavaScript? JavaScript是一种轻量级的脚本语言。所谓脚本语言（script language）指的是不像C或者汇编语言一样具备开发操作系统的能力，只用来编写控制其他大型应用程序（比如：浏览器）的脚本。 JavaScript是一种嵌入式（embeded）语言。只适合嵌入大型应用程序环境，调用宿主环境提供的API。 本身提供的核心语法很少，只能用来做一些数学以及逻辑运算; 本">
+<meta name="twitter:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1550489282456&di=e4f2ee7260c8a746a316590001179d7a&imgtype=0&src=http%3A%2F%2Fe.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2Fbf096b63f6246b60905f18b3e6f81a4c500fa2a0.jpg">
     
 
     
@@ -132,19 +135,19 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    未分类
+    <a class="page-title-link" href="/categories/JavaScript基础/">JavaScript基础</a>
     </h1>
 </div>
 
                         <div class="main-body-content">
-                            <article id="post-jsBase/scope" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-JS/overview" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        作用域
+        JavaScript简介
         </h1>
     
 
@@ -154,30 +157,62 @@
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/2019/02/18/jsBase/scope/" class="article-date">
-            <time datetime="2019-02-18T07:38:03.000Z" itemprop="datePublished">2019-02-18</time>
+        <a href="/2019/02/20/JS/overview/" class="article-date">
+            <time datetime="2019-02-20T05:42:22.494Z" itemprop="datePublished">2019-02-20</time>
         </a>
     </div>
 
 		
 
                 
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/JavaScript/">JavaScript</a>
+    </div>
+
             </div>
         
         
         <div class="article-entry" itemprop="articleBody">
-            <h1 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h1><ul>
-<li>JS是脚本语言，只有runtime, 没有buildTime。是由各个浏览器引擎编译运行起来的</li>
+            <h2 id="什么是JavaScript"><a href="#什么是JavaScript" class="headerlink" title="什么是JavaScript?"></a>什么是JavaScript?</h2><ol>
+<li>JavaScript是一种轻量级的脚本语言。所谓脚本语言（script language）指的是不像C或者汇编语言一样具备开发操作系统的能力，只用来编写控制其他大型应用程序（比如：浏览器）的脚本。<br><br></li>
+<li>JavaScript是一种嵌入式（embeded）语言。只适合嵌入大型应用程序环境，调用宿主环境提供的API。<ul>
+<li>本身提供的核心语法很少，只能用来做一些数学以及逻辑运算;</li>
+<li>本身不提供任何I/O(输入/输出)相关的API，全靠宿主环境提供;</li>
+<li>目前嵌入的宿主环境：浏览器、服务器（Node）。<br><br></li>
 </ul>
-<h1 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h1><ul>
-<li><p>静态作用域（词法作用域）: js中的变量都有静态作用域，在编译阶段确定作用域，不会被函数的位置所改变。变量的作用域是变量可以被访问的区域。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> value = <span class="number">1</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(value);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">bar</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> value = <span class="number">2</span>;</span><br><span class="line">    foo();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">bar();</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>嵌套作用域：如果一个变量的直接作用域嵌套了多层作用域，则变量在所有的作用域都可以被访问到</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span> (<span class="params">arg</span>) </span>&#123;</span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">bar</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log( <span class="string">'arg:'</span> + arg );</span><br><span class="line">  &#125;</span><br><span class="line">  bar();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(foo(<span class="string">'hello'</span>));   <span class="comment">// arg:hello</span></span><br></pre></td></tr></table></figure>
+<li>JavaScript是一种”对象模型”语言。各种宿主环境通过这个模型描述自己的功能和操作接口，从而通过JavaScript控制这些功能。但是又不是一种纯粹的”面向对象”的语言，还支持其他编程范式（函数式编程）。</li>
+</ol>
+<h2 id="核心语法"><a href="#核心语法" class="headerlink" title="核心语法"></a>核心语法</h2><ol>
+<li>基本语法构造（操作符、控制结构、语句）</li>
+<li>标准库（一系列具有各种功能的对象：Array、Date、Math）</li>
+</ol>
+<h2 id="宿主环境"><a href="#宿主环境" class="headerlink" title="宿主环境"></a>宿主环境</h2><h5 id="1-浏览器"><a href="#1-浏览器" class="headerlink" title="1. 浏览器"></a>1. 浏览器</h5><pre><code>- 浏览器控制类：操作浏览器
+- DOM类：操作网页的各种元素
+- Web类：实现互联网的各种功能
+</code></pre><h5 id="2-服务器（Node）"><a href="#2-服务器（Node）" class="headerlink" title="2. 服务器（Node）"></a>2. 服务器（Node）</h5><pre><code>- 各种操作系统的API（文件操作、网络通信）
+</code></pre><h2 id="性能"><a href="#性能" class="headerlink" title="性能"></a>性能</h2><ol>
+<li><p>灵活的语法，表达能力强<br><br></p>
 </li>
-<li><p>覆盖作用域: 内部作用域的变量与外部作用域的变量名相同，内部作用域就无法访问到外部的变量</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> x = <span class="string">"global"</span>；</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> x = <span class="string">"local"</span>；</span><br><span class="line">  <span class="built_in">console</span>.log(x);   <span class="comment">// local</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">f();</span><br><span class="line"><span class="built_in">console</span>.log(x);  <span class="comment">// global</span></span><br></pre></td></tr></table></figure></li>
+<li><p>支持编译运行</p>
+<ul>
+<li><p>JavaScript 语言本身，虽然是一种解释型语言，但是在现代浏览器中，JavaScript 都是编译后运行。程序会被高度优化，运行效率接近二进制程序。而且，JavaScript 引擎正在快速发展，性能将越来越好。</p>
+</li>
+<li><p>还有一种 WebAssembly 格式，它是 JavaScript 引擎的中间码格式，全部都是二进制代码。由于跳过了编译步骤，可以达到接近原生二进制代码的运行速度。各种语言（主要是 C 和 C++）通过编译成 WebAssembly，就可以在浏览器里面运行<br><br></p>
+</li>
+</ul>
+</li>
+<li><p>事件驱动和非阻塞式设计<br>JavaScript 程序可以采用事件驱动（event-driven）和非阻塞式（non-blocking）设计，在服务器端适合高并发环境，普通的硬件就可以承受很大的访问量。</p>
+</li>
+</ol>
+<h2 id="发展历程"><a href="#发展历程" class="headerlink" title="发展历程"></a>发展历程</h2><h2 id="广泛的使用：JavaScript正在向通用系统语言发展"><a href="#广泛的使用：JavaScript正在向通用系统语言发展" class="headerlink" title="广泛的使用：JavaScript正在向通用系统语言发展"></a>广泛的使用：JavaScript正在向通用系统语言发展</h2><ul>
+<li>浏览器的平台化</li>
+<li>Node</li>
+<li>数据库操作（NoSQL）</li>
+<li>移动平台开发</li>
+<li>内嵌脚本语言</li>
+<li>跨平台桌面应用程序</li>
 </ul>
 
         </div>
@@ -186,7 +221,7 @@
 
 
 
-    <a data-url="http://xiaolin18.github.io/2019/02/18/jsBase/scope/" data-id="cjsbj8v03000bydckpjxv05ue" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://xiaolin18.github.io/2019/02/20/JS/overview/" data-id="cjsd3gpq0000i2vckcfzj02s4" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -256,21 +291,20 @@
             "@type": "Person",
             "name": "辰十一"
         },
-        "headline": "作用域",
-        "image": "http://xiaolin18.github.io",
-        "keywords": "",
-        "genre": "",
-        "datePublished": "2019-02-18",
-        "dateCreated": "2019-02-18",
-        "dateModified": "2019-02-18",
-        "url": "http://xiaolin18.github.io/2019/02/18/jsBase/scope/",
-        "description": "概念
-JS是脚本语言，只有runtime, 没有buildTime。是由各个浏览器引擎编译运行起来的
-
-分类
-静态作用域（词法作用域）: js中的变量都有静态作用域，在编译阶段确定作用域，不会被函数的位置所改变。变量的作用域是变量可以被访问的区域。
-1234567891011var value = 1;function foo() &#123;    console.log(value);&#12"
-        "wordCount": 180
+        "headline": "JavaScript简介",
+        "image": "http://xiaolin18.github.iohttps://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1550489282456&di=e4f2ee7260c8a746a316590001179d7a&imgtype=0&src=http%3A%2F%2Fe.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2Fbf096b63f6246b60905f18b3e6f81a4c500fa2a0.jpg",
+        "keywords": "JavaScript",
+        "genre": "JavaScript基础",
+        "datePublished": "2019-02-20",
+        "dateCreated": "2019-02-20",
+        "dateModified": "2019-02-20",
+        "url": "http://xiaolin18.github.io/2019/02/20/JS/overview/",
+        "description": "什么是JavaScript?
+JavaScript是一种轻量级的脚本语言。所谓脚本语言（script language）指的是不像C或者汇编语言一样具备开发操作系统的能力，只用来编写控制其他大型应用程序（比如：浏览器）的脚本。
+JavaScript是一种嵌入式（embeded）语言。只适合嵌入大型应用程序环境，调用宿主环境提供的API。
+本身提供的核心语法很少，只能用来做一些数学以及逻辑运算;
+本"
+        "wordCount": 54
     }
 </script>
 
@@ -302,20 +336,10 @@ JS是脚本语言，只有runtime, 没有buildTime。是由各个浏览器引擎
         
 <nav id="article-nav">
     
-        <a href="/2019/02/18/vuex/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">下一篇</strong>
-        <p class="article-nav-title">
-        
-            我眼中的Vuex
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
     
-    
-        <a href="/2019/02/18/scss/scss-advanced/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2019/02/18/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">上一篇</strong>
-        <p class="article-nav-title">SCSS进阶</p>
+        <p class="article-nav-title">Hello World</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -337,30 +361,10 @@ JS是脚本语言，只有runtime, 没有buildTime。是由各个浏览器引擎
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2019/02/18/static-file/" class="thumbnail">
+                            <a href="/2019/02/20/JS/overview/" class="thumbnail">
     
     
-        <span style="background-image:url(../../../.././images/cat.jpeg)" alt="静态资源发布" class="thumbnail-image"></span>
-    
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/web前端/">web前端</a></p>
-                            <p class="item-title"><a href="/2019/02/18/static-file/" class="title">静态资源发布</a></p>
-                            <p class="item-date"><time datetime="2019-02-18T09:25:08.000Z" itemprop="datePublished">2019-02-18</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2019/02/18/scss/scss-base/" class="thumbnail">
-    
-    
-        <span style="background-image:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1550489282456&di=e4f2ee7260c8a746a316590001179d7a&imgtype=0&src=http%3A%2F%2Fe.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2Fbf096b63f6246b60905f18b3e6f81a4c500fa2a0.jpg)" alt="SCSS基础" class="thumbnail-image"></span>
+        <span style="background-image:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1550489282456&di=e4f2ee7260c8a746a316590001179d7a&imgtype=0&src=http%3A%2F%2Fe.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2Fbf096b63f6246b60905f18b3e6f81a4c500fa2a0.jpg)" alt="JavaScript简介" class="thumbnail-image"></span>
     
     
 </a>
@@ -368,49 +372,9 @@ JS是脚本语言，只有runtime, 没有buildTime。是由各个浏览器引擎
                         </div>
                         
                         <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2019/02/18/scss/scss-base/" class="title">SCSS基础</a></p>
-                            <p class="item-date"><time datetime="2019-02-18T08:51:33.000Z" itemprop="datePublished">2019-02-18</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2019/02/18/responsive/responsive-base/" class="thumbnail">
-    
-    
-        <span style="background-image:url(../../images/base-responsive.jpeg)" alt="PC、移动端适配基本概念" class="thumbnail-image"></span>
-    
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2019/02/18/responsive/responsive-base/" class="title">PC、移动端适配基本概念</a></p>
-                            <p class="item-date"><time datetime="2019-02-18T08:45:45.000Z" itemprop="datePublished">2019-02-18</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2019/02/18/responsive/responsive-img/" class="thumbnail">
-    
-    
-        <span style="background-image:url(../../../../../images/img-responsive.jpeg)" alt="图片适配PC、移动端" class="thumbnail-image"></span>
-    
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2019/02/18/responsive/responsive-img/" class="title">图片适配PC、移动端</a></p>
-                            <p class="item-date"><time datetime="2019-02-18T08:43:08.000Z" itemprop="datePublished">2019-02-18</time></p>
+                            <p class="item-category"><a class="article-category-link" href="/categories/JavaScript基础/">JavaScript基础</a></p>
+                            <p class="item-title"><a href="/2019/02/20/JS/overview/" class="title">JavaScript简介</a></p>
+                            <p class="item-date"><time datetime="2019-02-20T05:42:22.494Z" itemprop="datePublished">2019-02-20</time></p>
                         </div>
                     </li>
                 
@@ -420,7 +384,7 @@ JS是脚本语言，只有runtime, 没有buildTime。是由各个浏览器引擎
                             <a href="/2019/02/18/hello-world/" class="thumbnail">
     
     
-        <span style="background-image:url(../../../.././images/cat.jpeg)" alt="Hello World" class="thumbnail-image"></span>
+        <span style="background-image:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1550489282456&di=e4f2ee7260c8a746a316590001179d7a&imgtype=0&src=http%3A%2F%2Fe.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2Fbf096b63f6246b60905f18b3e6f81a4c500fa2a0.jpg)" alt="Hello World" class="thumbnail-image"></span>
     
     
 </a>
@@ -443,7 +407,7 @@ JS是脚本语言，只有runtime, 没有buildTime。是由各个浏览器引擎
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">分类</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/web前端/">web前端</a><span class="category-list-count">1</span></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/JavaScript基础/">JavaScript基础</a><span class="category-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -453,7 +417,7 @@ JS是脚本语言，只有runtime, 没有buildTime。是由各个浏览器引擎
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">归档</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">二月 2019</a><span class="archive-list-count">10</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">二月 2019</a><span class="archive-list-count">2</span></li></ul>
         </div>
     </div>
 
@@ -463,7 +427,7 @@ JS是脚本语言，只有runtime, 没有buildTime。是由各个浏览器引擎
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">标签</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/">js</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/前端/">前端</a><span class="tag-list-count">1</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaScript/">JavaScript</a><span class="tag-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -473,7 +437,7 @@ JS是脚本语言，只有runtime, 没有buildTime。是由各个浏览器引擎
     <div class="widget-wrap widget-float">
         <h3 class="widget-title">标签云</h3>
         <div class="widget tagcloud">
-            <a href="/tags/js/" style="font-size: 10px;">js</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a>
+            <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a>
         </div>
     </div>
 
@@ -529,7 +493,7 @@ JS是脚本语言，只有runtime, 没有buildTime。是由各个浏览器引擎
     var disqus_shortname = 'hexo-theme-hueman';
     
     
-    var disqus_url = 'http://xiaolin18.github.io/2019/02/18/jsBase/scope/';
+    var disqus_url = 'http://xiaolin18.github.io/2019/02/20/JS/overview/';
     
     (function() {
     var dsq = document.createElement('script');
